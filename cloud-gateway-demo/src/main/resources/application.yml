@@ -1,19 +1,13 @@
 
 server:
   port: 8088
-
 spring:
+  application:
+    name: cloud-gateway-demo
   cloud:
-    nacos:
-      server-addr: 127.0.0.1:8848
-
     gateway:
       routes:
-        - id: user-service
-          uri: lb://user-service
+        - id: data-service
+          uri: http://127.0.0.1:8082
           predicates:
-            - Path=/userInfo/**
-        - id: account-service
-          uri: lb://account-service
-          predicates:
-            - Path=/accountInfo/**
+            - Path=/data/**

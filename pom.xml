@@ -10,13 +10,8 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.3.0</version>
-<!--        <relativePath/> -->
+        <relativePath/>
     </parent>
-
-    <modules>
-        <module>cloud-gateway-demo</module>
-        <module>cloud-data-demo</module>
-    </modules>
     <name>cloud-demo</name>
     <description>Demo project for Spring Boot</description>
 
@@ -46,6 +41,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
     <build>
@@ -89,5 +85,10 @@
             </snapshots>
         </repository>
     </repositories>
+
+    <modules>
+        <module>cloud-gateway-demo</module>
+        <module>cloud-data-demo</module>
+    </modules>
 
 </project>
