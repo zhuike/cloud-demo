@@ -89,6 +89,8 @@
     <modules>
         <module>cloud-gateway-demo</module>
         <module>cloud-data-demo</module>
-    </modules>
+		<module>cloud-infrastructure-demo</module>
+		<module>cloud-infrastructure-demo/cloud-kafka-starter</module>
+	</modules>
 
 </project>
